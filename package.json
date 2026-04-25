@@ -1,25 +1,33 @@
 {
-  "name": "aws-textract-helper",
-  "version": "1.0.0-beta.5",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "name": "aws-textract-helper-ts",
+  "version": "1.0.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "description": "Library for creating forms and tables from Amazon Textract responses",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/muhimasri/aws-textract-helper"
+    "url": "https://github.com/riquinhuw/aws-textract-helper-ts"
   },
-  "keywords": ["AWS", "Textract", "Nodejs"],
-  "author": "Muhi Masri",
-  "license": "ISC",
+  "keywords": [
+    "AWS",
+    "Textract",
+    "Nodejs",
+    "TypeScript"
+  ],
+  "author": "Carlos Henrique",
+  "license": "MIT",
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "@types/node": "^20.0.0",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-textract": "^3.0.0"
   }
 }
