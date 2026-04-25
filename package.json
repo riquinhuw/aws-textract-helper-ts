@@ -1,9 +1,6 @@
 {
 	"name": "aws-textract-helper-ts",
 	"version": "1.0.0",
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	},
 	"description": "Library for creating forms and tables from Amazon Textract responses",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
