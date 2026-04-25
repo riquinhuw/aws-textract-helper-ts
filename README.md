@@ -1,3 +1,6 @@
+# This is a TypeScript fork of the original aws-textract-helper created by Muhi Masri
+I won't be actively maintaining this repository. I just created it to make my life easier and hopefully help other devs.
+
 # AWS Textract Helper
 This is a JavaScript library that provides an easy to use methods for extracting structured data from Amazon Textract APIs.
 
