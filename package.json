@@ -1,33 +1,39 @@
 {
-  "name": "aws-textract-helper-ts",
-  "version": "1.0.0",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "description": "Library for creating forms and tables from Amazon Textract responses",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/riquinhuw/aws-textract-helper-ts"
-  },
-  "keywords": [
-    "AWS",
-    "Textract",
-    "Nodejs",
-    "TypeScript"
-  ],
-  "author": "Carlos Henrique",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^6.0.3"
-  },
-  "dependencies": {
-    "@aws-sdk/client-textract": "^3.0.0"
-  }
+	"name": "aws-textract-helper-ts",
+	"version": "1.0.0",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
+	"description": "Library for creating forms and tables from Amazon Textract responses",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc",
+		"lint": "biome check .",
+		"format": "biome format --write .",
+		"prepublishOnly": "npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/riquinhuw/aws-textract-helper-ts"
+	},
+	"keywords": [
+		"AWS",
+		"Textract",
+		"Nodejs",
+		"TypeScript"
+	],
+	"author": "Carlos Henrique",
+	"license": "MIT",
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.13",
+		"@types/node": "^20.0.0",
+		"typescript": "^6.0.3"
+	},
+	"dependencies": {
+		"@aws-sdk/client-textract": "^3.0.0"
+	}
 }
